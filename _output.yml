@@ -13,4 +13,12 @@ bookdown::gitbook:
     in_header: [assets/fonts.html]
 
 bookdown::pdf_book:
-  latex_engine: "xelatex"
+  latex_engine: " xelatex”
+    download: ["pdf", "epub"]
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+bookdown::epub_book: default
